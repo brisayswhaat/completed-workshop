@@ -1,0 +1,15 @@
+{
+	"mutants": {
+		"A": ["Angel", "Armor", "Astra", "Aurora"],
+		"B": ["Beast", "Bishop", "Bling", "Blink"],
+		"C": ["Cannonball", "Charles Xavier", "Colossus", "Cyclops"],
+		"D": ["Darken", "Dazzler", "Doctor Doom"],
+		"E": ["Emma Frost"],
+		"F": ["Firestar", "Forge"],
+		"J": ["Jean Grey", "Jubilee", "Juggernaut", "Justice"],
+		"M": ["Magma", "Magneto", "Marvel Girl, Rachel Summers", "Moonstone", "Multiple Man"],
+		"N": ["Northstar", "Nightcrawler"],
+		"S": ["Scarlet Witch", "Shadowcat", "Squirrel Girl", "Storm"],
+		"W": ["Wiccan", "Wolverine"]
+	}
+}

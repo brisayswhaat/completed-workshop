@@ -1,0 +1,40 @@
+{
+
+	"articles": {
+
+		"0": {
+			"hero_image": "images/feature-queens.jpg",
+			"thumb_image": "images/trending-storm.jpg",
+			"title": "The Real Housewives of the X-Mansion",
+			"date": {
+				"month": "Mar",
+				"date": "6",
+				"year": "2014"
+			},
+			"content": "<p>Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>"
+		},
+		"1": {
+			"hero_image": "images/feature-emma.jpg",
+			"thumb_image": "images/trending-emma.jpg",
+			"title": "Girls, Cyclops is Not Worth It.",
+			"date": {
+				"month": "Mar",
+				"date": "4",
+				"year": "2014"
+			},
+			"content": "<p>Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>"
+		},
+		"2": {
+			"hero_image": "images/feature-magneto.jpg",
+			"thumb_image": "images/trending-magneto.jpg",
+			"title": "70-years-old; Beefier than The Rock.",
+			"date": {
+				"month": "Mar",
+				"date": "3",
+				"year": "2014"
+			},
+			"content": "<p>Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla.</p>"
+		}
+
+	}
+}
