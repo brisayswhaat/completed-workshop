@@ -3,6 +3,8 @@ mu-front-end-workshop
 
 working files for a front-end workshop designed for anyone who wants to step further into the front-end world. These files were original created for a workshop hosted by Aaron Chu at Millersville University for the Art and Design Department on March 7th, 2014.
 
+**Disclaimer: This is a non-profit project and I do not own the rights to all super hero images.**
+
 #Folder Structure
 + working files
 	- completed
