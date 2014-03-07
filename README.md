@@ -28,6 +28,7 @@ working files for a front-end workshop designed for anyone who wants to step fur
 		The main page.
 
 #How to use
+
 	
 Most details and explanations will be discussed in the workshop. However, because these workshops are super intensive 1-day workshops, I recommand the attendents to at least read through the code prior for a basic understand of the code, that way we can discuss more advanced level topic during the workshop. 
 
