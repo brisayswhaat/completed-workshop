@@ -2,7 +2,18 @@
 
 	//instantiating the utility library. ignore these two lines for now if you are confused.
 	var utility = new Utility,
-		collectedArticles;
+		collectedArticles,
+		mapOptions = {
+			center: new google.maps.LatLng(39.997050, -76.354334),
+			zoom: 15,
+			scrollwheel: false,
+			draggable: false
+		},
+		map = new google.maps.Map( document.getElementById('map-container'), mapOptions );
+
+		
+	//First, we make the map
+	// google.maps.event.addDomListener( window, 'load', initializeMap );
 
 
 	/*
@@ -28,7 +39,7 @@
 			type: 'GET',
 			dataType: 'json',
 			cache: false,
-			success: callback
+			success: callback,
 		});
 	}
 	/*
@@ -39,10 +50,25 @@
 	 */	
 	 //data is included as parameter because we know that the success member from an $.ajax function will automatically give us the data it found from the source path.
 	function loadArticlesOnSuccess( data ){
-
 		//cache the received data into a local variable called collectedArticles so that we dont not have to keep asking the "server" and using http request; let the utility to parse the articles for us, after the parsing is done, the function will return the articles in an array.
 		collectedArticles = utility.parseArticle( data );
 
+	}
+	function makeMutantMapMarker( data ){
+		var collectedMutants =  data.mutants.foundMutants,
+			marker = null,
+			latLong = null;
+
+		$('.mutant-counter').find('strong').html(data.mutants.mutantCount);
+
+		collectedMutants.forEach(function( e, i ){
+			latLong = new google.maps.LatLng(e.lat, e.long);
+			marker = new google.maps.Marker({
+				position: latLong,
+				title: e.title,
+				map: map
+			});
+		});
 	}
 	/*
 	 * @func loadAnArticle: load only one article based on given parameters. 
@@ -53,7 +79,6 @@
 	 */	
 	function loadAnArticle( index, type, trendingIndex ){
 		var curArticle; 
-
 		if( type === 'featured'){
 			curArticle = utility.parseItemAsFeatued( collectedArticles[ index ] );
 		}
@@ -63,6 +88,7 @@
 		curArticle.data('cur-article', index );
 	}
 
+	
 	/*
 	 *
 	 * Method 2: Defining as Object Literals 
@@ -119,6 +145,10 @@
 		}
 	}
 
+
+
+
+
 	//Event binding
 	/*
 	 * Pop Quiz:
@@ -135,7 +165,7 @@
 
 	//initialize the page by loading in the articles from our JSON source.
 	loadData('data-fixtures/articles.json', loadArticlesOnSuccess);
-
+	loadData('data-fixtures/map.json', makeMutantMapMarker);
 	/*
 	 * Pop Quiz:
 	 * 1. What is a namespace.

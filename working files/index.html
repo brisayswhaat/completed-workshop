@@ -167,29 +167,13 @@
 					<span class="sub-header">Built by Magneto and Professor X, Cerebro is a device that can help to locate all mutants on the planet.</span>
 				</h1>
 				<div id="map-container"></div>
-				<p>There are currently <strong>0</strong> mutants in sight.</p>
+				<p class="mutant-counter">There are currently <strong></strong> mutants in sight.</p>
 			</div>
 		</section>
 			
 		<script src="scripts/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGN6wMluLs1ErKBBNIe10VHrYLvoI2kCY&sensor=true"></script>
-		<script>
-			(function( $ ){
-				
-				function initialize(){
-					var mapOptions = {
-						center: new google.maps.LatLng(39.997050, -76.354334),
-						zoom: 15,
-						scrollwheel: false
-					},
-					map = new google.maps.Map( document.getElementById('map-container'), mapOptions );
-				}
 
-
-				google.maps.event.addDomListener( window, 'load', initialize );
-
-			}( jQuery ))
-		</script>
 		<script src="scripts/lib.js"></script>
 		<script src="scripts/global.js"></script>
 	</body>

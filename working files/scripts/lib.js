@@ -84,7 +84,7 @@ Utility.prototype.parseArticle = function( data ){
 	articlesArray = self.resultToArray( data.articles );
 	//processing the array collected from the for...in loop
 	articlesArray.forEach(function(	item, index ){
-		//if it is the first article, we pus it into the main hero area
+		//if it is the first article, we put it into the main hero area
 		if( index === 0 ) {
 			currentArticle = self.parseItemAsFeatued( item );
 		} else {

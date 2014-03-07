@@ -1,0 +1,20 @@
+{
+	"mutants": {
+
+		"mutantCount": 2,
+		"foundMutants": [
+			{
+				"title": "Storm",
+				"lat": 39.999261,
+				"long": -76.350944
+			},
+			{
+				"title": "Jean Grey",
+				"lat": 39.998024,
+				"long": -76.355061
+			}
+
+		]
+	}
+
+}
